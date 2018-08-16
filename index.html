@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=yes" />
+        <title>Multiple Questions</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div id='cover' class='hide'>✓</div>
+
+        <div id="container">
+            <section id="top">
+
+                <div id='panel'>
+                    <div id='option'>
+                        Range from 0 to 
+                        <input type="number" id="range"
+                               min="10" max="1000" value='30'/>
+                        <button type="button" onclick="reset()">Reset</button>
+                    </div>
+                </div>
+
+                <h1 id="question">5 + 2</h1>
+                <div id='score'>
+                    <li value='0'>✓: 0</li>
+                    <li value='0'>✕: 0</li>
+                </div>
+            </section>
+
+            <section id="bot">
+                <div class="btn">1</div>
+                <div class="btn">1</div>
+                <div class="btn">1</div>
+                <div class="btn">1</div>
+                <div class="btn">1</div>
+                <div class="btn">1</div>
+            </section>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

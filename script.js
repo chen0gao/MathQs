@@ -88,5 +88,7 @@ for(i = 0; i< answerBoxCheck.length; i++) {
 function reset() {
     createQuestion();
     document.querySelectorAll("#score li")[0].innerHTML = "✓: 0";
-    document.querySelectorAll("#score li")[1].innerHTML = "✓: 0";
+    document.querySelectorAll("#score li")[0].value = 0;
+    document.querySelectorAll("#score li")[1].innerHTML = "✕: 0";
+    document.querySelectorAll("#score li")[1].value = 0;
 }
